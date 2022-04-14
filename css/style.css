@@ -1,3 +1,6 @@
+:root {
+  --game-gap: 0.2rem;
+}
 /******************************************
 /* CSS
 /*******************************************/
@@ -19,3 +22,14 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.game_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 40px repeat(5, 20px);
+  grid-gap: var(--game-gap);
+  padding: var(--game-gap);
+}
+
+.category, .clue {
+  background: blue;
+}
